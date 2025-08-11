@@ -1,4 +1,4 @@
-local P = require('default').palette
+local P = require('default.palette')
 
 
 local function create_group(mode_color)
