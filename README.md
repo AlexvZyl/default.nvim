@@ -7,6 +7,7 @@ The default neovim theme, but with some minor improvements.
 
 ## Installation
 
+Lazy:
 ```lua
 {
     'AlexvZyl/default.nvim',
@@ -18,7 +19,7 @@ The default neovim theme, but with some minor improvements.
 }
 ```
 
-And for lualine:
+Lualine:
 ```lua
 require("lualine").setup({
     options = { theme = "default" }
