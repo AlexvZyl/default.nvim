@@ -18,6 +18,14 @@ The default neovim theme, but with some minor improvements.
 }
 ```
 
+And for lualine:
+```lua
+require("lualine").setup({
+    options = { theme = "default" }
+})
+
+```
+
 ## Screenshots
 
 <p>
