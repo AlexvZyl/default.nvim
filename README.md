@@ -17,3 +17,15 @@ The default neovim theme, but with some minor improvements.
     end
 }
 ```
+
+## Screenshots
+
+<p>
+  <img width="49%" alt="image" src="https://github.com/user-attachments/assets/174dd043-ed1f-437b-9a13-5e23e1ab29fd" />
+  <img width="49%" alt="image" src="https://github.com/user-attachments/assets/5079c85d-b82d-4cb6-9619-80043707ecee" />
+</p>
+
+<p>
+  <img width="49%" alt="image" src="https://github.com/user-attachments/assets/c91d3d3f-fca2-4d31-986b-94a7d8c0fa3f" />
+  <img width="49%" alt="image" src="https://github.com/user-attachments/assets/0515daf1-7ae9-4cca-93e9-a3c182ccd5ad" />
+</p>
