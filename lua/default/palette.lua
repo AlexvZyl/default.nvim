@@ -3,7 +3,7 @@ local U = require("default.utils")
 local M = {}
 
 -- NOTE: Using builtin neovim colors.
-M.palette = {
+M = {
     -- Colors.
     red = U.get_color_hex("LightCoral"),
     green = U.get_color_hex("NvimLightGreen"),
@@ -27,17 +27,17 @@ M.palette = {
 }
 
 -- Extensions.
-M.palette.fg = M.palette.white0
-M.palette.bg = M.palette.gray0
-M.palette.bg_dark = M.palette.black
-M.palette.bg_float = U.blend(M.palette.bg, 0.55, M.palette.bg_dark)
-M.palette.fg_dim = U.blend(M.palette.white2, 0.65, M.palette.bg_dark)
-M.palette.bg_highlight = M.palette.gray1
-M.palette.diff = {
-    add = U.blend(M.palette.green, 0.2, M.palette.bg_dark),
-    delete = U.blend(M.palette.red, 0.2, M.palette.bg_dark),
-    change = U.blend(M.palette.blue, 0.2, M.palette.bg_dark),
-    text = M.palette.blue,
+M.fg = M.white0
+M.bg = M.gray0
+M.bg_dark = M.black
+M.bg_float = U.blend(M.bg, 0.55, M.bg_dark)
+M.fg_dim = U.blend(M.white2, 0.65, M.bg_dark)
+M.bg_highlight = M.gray1
+M.diff = {
+    add = U.blend(M.green, 0.2, M.bg_dark),
+    delete = U.blend(M.red, 0.2, M.bg_dark),
+    change = U.blend(M.blue, 0.2, M.bg_dark),
+    text = M.blue,
 }
 
 return M
