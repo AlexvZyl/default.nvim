@@ -35,7 +35,7 @@ function M.blend(foreground, alpha, background)
     return string.format("#%02x%02x%02x", blendChannel(1), blendChannel(2), blendChannel(3))
 end
 
- function M.get_color_hex(name)
+function M.get_color_hex(name)
     local rgb = vim.api.nvim_get_color_by_name(name)
     return string.format("#%06x", rgb)
 end
