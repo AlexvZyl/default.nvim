@@ -9,11 +9,19 @@ function M.load()
     U.set_highlights_table(require("default.groups"))
 end
 
--- Add command to nvim
-vim.api.nvim_create_user_command('Default', function(_)
-    vim.api.nvim_command('colorscheme default')
+vim.api.nvim_create_user_command("Default", function(opts)
+    if opts.args == "" then
+        vim.cmd.colorscheme("default")
+    elseif opts.args == "palette" then
+        require("default.palette").print_palette()
+    else
+        vim.notify("Unknown argument: " .. opts.args, vim.log.levels.ERROR)
+    end
 end, {
-    nargs = 1,
+    nargs = "?",
+    complete = function(_, _)
+        return { "palette" }
+    end
 })
 
 return M

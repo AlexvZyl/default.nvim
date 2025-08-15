@@ -40,4 +40,8 @@ M.diff = {
     text = M.blue,
 }
 
+function M.print_palette()
+    print(vim.inspect(M))
+end
+
 return M
