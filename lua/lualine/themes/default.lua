@@ -20,6 +20,6 @@ return {
     replace = create_group(P.red),
     command = create_group(P.orange),
     insert = create_group(P.green),
-    interactive = create_group(P.gray0),
-    terminal = create_group(P.gray0),
+    interactive = create_group(P.magenta),
+    terminal = create_group(P.yellow),
 }
