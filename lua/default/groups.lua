@@ -26,6 +26,7 @@ return {
     QuickFixFilename = { fg = P.fg },
     QuickFixLine = { fg = P.fg },
     LspInfoBorder = { link = "FloatBorder" },
+    MsgArea = { bg = P.bg_dark },
 
     -- Syntax tweaks.
     MatchParen = { bg = U.get_bg(P.bg), underline = true },
