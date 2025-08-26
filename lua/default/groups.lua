@@ -130,6 +130,7 @@ return {
     NoiceCmdlineIcon = { fg = P.yellow },
     NoiceCmdlineIconSearch = { fg = P.yellow, bg = P.bg_dark },
     NoiceCmdline = { bg = P.bg_dark },
+    NoiceMini = { bg = P.bg },
 
     -- Todo comments
     TodoFgTODO = { fg = P.cyan, bold = true },
