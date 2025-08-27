@@ -148,4 +148,7 @@ return {
     DiffChange = { bg = P.bg },
     DiffText = { bg = P.diff.change },
     DiffTextAdd = { bg = P.diff.change },
+
+    -- Leap.
+    LeapLabel = { bg = P.yellow, fg = P.bg_dark, bold = true },
 }
