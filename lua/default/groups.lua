@@ -137,6 +137,8 @@ return {
 
     -- Lazy.
     LazyProgressDone = { fg = P.green },
+    LazyBackdrop = { bg = P.bg },
+    LazyTaskOutput = { bg = P.bg },
 
     -- Hacky stuff
     luaParenError = { link = "Normal" },
