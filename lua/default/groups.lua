@@ -125,11 +125,12 @@ return {
     NotifyBackground = { bg = U.get_bg(P.bg) },
 
     -- Noice.
-    NoiceCmdlinePopupBorder = { fg = P.cyan },
     NoiceFormatProgressDone = { bg = P.green },
     NoiceCmdlineIcon = { fg = P.yellow },
     NoiceCmdlineIconSearch = { fg = P.yellow, bg = P.bg_dark },
     NoiceCmdline = { bg = P.bg_dark },
+    NoiceCmdlinePopup = { link = "NoiceCmdline" },
+    NoiceCmdlinePopupBorder = { fg = P.cyan, bg = P.bg_dark },
     NoiceMini = { bg = P.bg },
 
     -- Todo comments
