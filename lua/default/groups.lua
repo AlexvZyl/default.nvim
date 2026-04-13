@@ -33,14 +33,14 @@ return {
     Statement = { fg = P.orange, bold = false },
     Comment = { fg = P.gray2, bold = false },
     Title = { fg = P.yellow, bold = true },
-    Constant = { bold = false },
     ["@markup.heading.2"] = { fg = P.orange, bold = true },
     ["@markup.heading.3"] = { fg = P.orange },
     ["@markup.heading.4"] = { link = "@markup.heading.3" },
     ["@markup.heading.5"] = { link = "@markup.heading.3" },
     ["@markup.heading.6"] = { link = "@markup.heading.3" },
-    Number = { fg = P.magenta },
-    Boolean = { fg = P.magenta },
+    Constant = { fg = P.magenta },
+    Number = { link = "Constant" },
+    Boolean = {link =  "Constant" },
 
     -- Indent blankline.
     IndentBlanklineChar = { fg = U.blend(P.gray1, 0.7, P.bg), },
