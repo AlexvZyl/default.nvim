@@ -40,6 +40,7 @@ return {
     ["@module"] = { italic = true },
     ["@keyword.directive"] = { fg = P.red },
     ["@keyword.import"] = { link = "@keyword.directive" },
+    ["@boolean"] = { link = "Number" },
 
     ["@markup.heading.2"] = { fg = P.orange, bold = true },
     ["@markup.heading.3"] = { fg = P.orange },
