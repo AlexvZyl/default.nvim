@@ -27,6 +27,8 @@ return {
     QuickFixLine = { fg = P.fg },
     LspInfoBorder = { link = "FloatBorder" },
     MsgArea = { bg = P.bg_dark },
+    StatusLine = { bg = P.bg_dark },
+    StatusLineNC = { bg = P.bg_dark },
 
     -- Syntax tweaks.
     MatchParen = { bg = U.get_bg(P.bg), underline = true },
