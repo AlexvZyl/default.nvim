@@ -9,6 +9,7 @@ return {
 
     -- Native UI.
     Normal = { bg = U.get_bg(P.bg) },
+    NormalNC = { bg = U.get_bg(P.bg), sp = P.bg_dark },
     Visual = { bg = P.bg_highlight },
     WinBar = {
         fg = P.fg_dim,
@@ -17,7 +18,7 @@ return {
         sp = P.bg_dark,
     },
     WinBarNC = { link = "WinBar" },
-    Pmenu = { link = "Normal" },
+    Pmenu = { bg = P.bg_float },
     WinSeparator = { fg = P.bg_dark, bg = U.get_bg(P.bg) },
     NormalFloat = { fg = P.fg, bg = U.get_bg(P.bg) },
     FloatBorder = { fg = P.fg, bg = U.get_bg(P.bg) },
@@ -26,14 +27,14 @@ return {
     QuickFixFilename = { fg = P.fg },
     QuickFixLine = { fg = P.fg },
     LspInfoBorder = { link = "FloatBorder" },
-    MsgArea = { bg = P.bg_dark },
+    MsgArea = { bg = P.bg_float },
     StatusLine = { bg = P.bg_dark },
     StatusLineNC = { bg = P.bg_dark },
 
     -- Syntax tweaks.
     MatchParen = { bg = U.get_bg(P.bg), underline = true },
     Statement = { fg = P.orange, bold = false },
-    Comment = { fg = P.gray2, bold = false },
+    Comment = { fg = P.gray3, bold = false },
     Title = { fg = P.yellow, bold = true },
     Constant = { bold = true },
     Number = { fg = P.magenta },
@@ -44,11 +45,12 @@ return {
     ["@keyword.import"] = { link = "@keyword.directive" },
     ["@boolean"] = { link = "Number" },
 
+    ["@markup.heading.1"] = { fg = P.yellow, bold = true },
     ["@markup.heading.2"] = { fg = P.orange, bold = true },
-    ["@markup.heading.3"] = { fg = P.orange },
-    ["@markup.heading.4"] = { link = "@markup.heading.3" },
-    ["@markup.heading.5"] = { link = "@markup.heading.3" },
-    ["@markup.heading.6"] = { link = "@markup.heading.3" },
+    ["@markup.heading.3"] = { fg = P.yellow },
+    ["@markup.heading.4"] = { fg = P.orange },
+    ["@markup.heading.5"] = { fg = P.fg, bold = true },
+    ["@markup.heading.6"] = { link = "@markup.heading.5" },
 
     -- Indent blankline.
     IndentBlanklineChar = { fg = U.blend(P.gray1, 0.7, P.bg), },
@@ -146,7 +148,6 @@ return {
 
     -- Lazy.
     LazyProgressDone = { fg = P.green },
-    LazyBackdrop = { bg = P.bg },
     LazyTaskOutput = { bg = P.bg },
 
     -- Hacky stuff

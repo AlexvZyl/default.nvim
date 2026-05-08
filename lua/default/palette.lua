@@ -18,6 +18,7 @@ M = {
     gray0 = U.get_color_hex("NvimDarkGray2"),
     gray1 = U.get_color_hex("NvimDarkGray3"),
     gray2 = U.get_color_hex("NvimDarkGray4"),
+    gray3 = "#55585e", -- Slightly lighter than gray2.  TODO: Automate this.
 
     -- Whites.
     white0 = U.get_color_hex("NvimLightGray1"),
