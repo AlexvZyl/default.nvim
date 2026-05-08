@@ -30,6 +30,7 @@ return {
     MsgArea = { bg = P.bg_float },
     StatusLine = { bg = P.bg_dark },
     StatusLineNC = { bg = P.bg_dark },
+    ModeMsg = { fg = P.red },
 
     -- Syntax tweaks.
     MatchParen = { bg = U.get_bg(P.bg), underline = true },
@@ -39,6 +40,7 @@ return {
     Constant = { bold = true },
     Number = { fg = P.magenta },
     Boolean = { link = "Constant" },
+    Type = { fg = P.yellow },
 
     ["@module"] = { italic = true },
     ["@keyword.directive"] = { fg = P.red },
