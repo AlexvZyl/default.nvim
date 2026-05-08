@@ -18,7 +18,7 @@ return {
         sp = P.bg_dark,
     },
     WinBarNC = { link = "WinBar" },
-    Pmenu = { bg = P.bg_float },
+    Pmenu = { link = "Normal" },
     WinSeparator = { fg = P.bg_dark, bg = U.get_bg(P.bg) },
     NormalFloat = { fg = P.fg, bg = U.get_bg(P.bg) },
     FloatBorder = { fg = P.fg, bg = U.get_bg(P.bg) },
