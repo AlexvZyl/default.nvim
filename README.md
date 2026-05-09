@@ -1,8 +1,5 @@
 # default.nvim
 
-> [!WARNING]
-> This comes from my neovim config.  I created this plugin for a friend that liked my theme and wanted to try it out.  I am going to keep this repository very minimal.  You are welcome to open issues and/or PRs, but I will most likely recommend that you fork it and do as you please.
-
 The default neovim theme, but with some minor improvements.
 
 ## Installation
@@ -17,6 +14,28 @@ Lazy:
         require('default').load()
     end
 }
+```
+
+## Config
+
+The config is minimal for a reason, I don't want to maintain a lot of code.  If you want more than this I recommend you fork the repo.
+
+```lua
+local palette = require('default.palette')
+
+require('default').load({
+    overrides = {
+        Comment = {
+            fg = palette.green,
+            bg = "#000000",
+            sp = "#ff0000",
+            bold = true,
+            italic = true,
+            underline = true,
+            undercurl = true,
+        },
+    }
+})
 ```
 
 Lualine:
