@@ -31,6 +31,7 @@ return {
     StatusLine = { bg = P.bg_dark },
     StatusLineNC = { bg = P.bg_dark },
     ModeMsg = { fg = P.red },
+    PmenuMatch = { fg = P.yellow },
 
     -- Syntax tweaks.
     MatchParen = { bg = U.get_bg(P.bg), underline = true },
