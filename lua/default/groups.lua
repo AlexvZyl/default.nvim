@@ -42,6 +42,7 @@ return {
     Number = { fg = P.magenta },
     Boolean = { link = "Constant" },
     Type = { fg = P.yellow },
+    PreProc = { fg = P.red },
 
     ["@module"] = { italic = true },
     ["@keyword.directive"] = { fg = P.red },
