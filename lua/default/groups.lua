@@ -30,7 +30,7 @@ return {
     MsgArea = { bg = P.bg_float },
     StatusLine = { bg = P.bg_dark },
     StatusLineNC = { bg = P.bg_dark },
-    ModeMsg = { fg = P.red },
+    ModeMsg = { fg = P.red, bold = true },
     PmenuMatch = { fg = P.yellow },
 
     -- Syntax tweaks.
@@ -42,7 +42,7 @@ return {
     Number = { fg = P.magenta },
     Boolean = { link = "Constant" },
     Type = { fg = P.yellow },
-    PreProc = { fg = P.red },
+    PreProc = { link = "Function" },
 
     ["@module"] = { italic = true },
     ["@keyword.directive"] = { fg = P.red },
@@ -55,6 +55,7 @@ return {
     ["@markup.heading.4"] = { fg = P.orange },
     ["@markup.heading.5"] = { fg = P.fg, bold = true },
     ["@markup.heading.6"] = { link = "@markup.heading.5" },
+    ["@markup.raw.block.markdown"] = { link = "Normal" },
 
     -- Indent blankline.
     IndentBlanklineChar = { fg = U.blend(P.gray1, 0.7, P.bg), },
@@ -107,45 +108,10 @@ return {
     DiagnosticVirtualLinesOk = { fg = P.green, bg = P.bg_float },
     DiagnosticVirtualLinesInfo = { fg = P.blue, bg = P.bg_float },
 
-    -- Whichkey.
-    WhichKeyNormal = { bg = P.bg_float },
-    WhichKeyTitle = { bg = P.bg_float, fg = P.yellow, bold = true },
-    WhichKeyBorder = { bg = P.bg_float, fg = P.bg_dark },
-
-    -- Dashboard.
-    DashboardHeader = { fg = P.yellow },
-    DashboardFooter = { fg = P.cyan },
-    DashboardProjectTitle = { fg = P.orange },
-    DashboardMruTitle = { fg = P.orange },
-
     -- Telescope.
     TelescopePromptPrefix = { fg = P.yellow, bg = U.get_bg(P.bg) },
     TelescopeTitle = { fg = P.bg_dark, bg = P.orange },
     TelescopeMultiIcon = { fg = P.fg },
-
-    -- Notify.
-    NotifyINFOTitle = { fg = P.green },
-    NotifyINFOIcon = { fg = P.green },
-    NotifyINFOBorder = { fg = P.green },
-    NotifyINFOBody = { fg = P.fg },
-    NotifyWARNTitle = { fg = P.yellow },
-    NotifyWARNIcon = { fg = P.yellow },
-    NotifyWARNBorder = { fg = P.yellow },
-    NotifyWARNBody = { fg = P.fg },
-    NotifyERRORTitle = { fg = P.red },
-    NotifyERRORIcon = { fg = P.red },
-    NotifyERRORBorder = { fg = P.red },
-    NotifyERRORBody = { fg = P.fg },
-    NotifyBackground = { bg = U.get_bg(P.bg) },
-
-    -- Noice.
-    NoiceFormatProgressDone = { bg = P.green },
-    NoiceCmdlineIcon = { fg = P.yellow },
-    NoiceCmdlineIconSearch = { fg = P.yellow, bg = P.bg_dark },
-    NoiceCmdline = { bg = P.bg_dark },
-    NoiceCmdlinePopup = { link = "NoiceCmdline" },
-    NoiceCmdlinePopupBorder = { fg = P.cyan, bg = P.bg_dark },
-    NoiceMini = { bg = P.bg },
 
     -- Todo comments
     TodoFgTODO = { fg = P.cyan, bold = true },
